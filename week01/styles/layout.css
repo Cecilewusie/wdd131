@@ -67,3 +67,8 @@ footer {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     line-height: 1em;
 }
+
+img {
+    height: 300px;
+    width: 300px;
+}
