@@ -63,9 +63,6 @@ section li:hover {
     color: #333;
     text-decoration: none;
     list-style: circle;
-    a {
-        color: #394b04;
-    }
 }
 
 .about-content {
@@ -93,7 +90,7 @@ h2 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     background-color: white;
     color: black;
-    padding: auto;
+    padding: 0.1em;
     text-align: center;
 }
 
