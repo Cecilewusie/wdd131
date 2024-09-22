@@ -1,0 +1,42 @@
+/* designing the header*/
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+nav {
+    margin: 0 auto 2rem;
+    max-width: 100%;
+    background-color: #333;
+    align-items: center;
+    
+}
+
+nav ul li a {
+    flex: 1 1 100%;
+    display: block;
+    color: #eee;
+    text-decoration: none;
+    padding: 0.75rem;
+    text-align: center;
+}
+
+nav ul li a:hover, a:focus, a:active {
+    font-weight: 700;
+    text-decoration: overline;
+    text-decoration-color: brown;
+}
+
+nav li {
+    flex: 1 1 auto;
+}
+nav ul {
+    flex-wrap: wrap;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    
+}
+main {
+    background-color: gray;
+}
