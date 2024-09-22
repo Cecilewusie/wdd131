@@ -45,7 +45,7 @@ div {
     height: 100%;
 }
 main {
-    background-color: aqua;
+    background-color: grey;
     grid-column: 1 / 2;
     grid-row: auto;
     height: fit-content;
@@ -72,4 +72,5 @@ footer {
 img {
     height: 300px;
     width: 300px;
+    border-radius: 1em;
 }
