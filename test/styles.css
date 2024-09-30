@@ -1,0 +1,11 @@
+.container {
+    background-color: grey;
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+    border-radius: 1em;
+}
+
+button {
+    width: 200px;
+}
