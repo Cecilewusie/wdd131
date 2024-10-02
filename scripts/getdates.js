@@ -10,6 +10,10 @@ const Remaining = document.querySelector("#monthsRemaining");
 const birthmonth = 9;
 if (birthmonth > todaysDate.getMonth()) {
     Remaining.innerHTML = `${birthmonth-todaysDate.getMonth()}`;
-} else {
+;}
+else if (birthmonth === todaysDate.getMonth()) {
+    Remaining.textContent = "few days not"
+}
+ else {
     Remaining.innerHTML = `${todaysDate.getMonth() - birthmonth}`
 };
