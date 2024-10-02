@@ -1,0 +1,33 @@
+/* Larger Views ******************************/
+@media (min-width: 40em) {
+	header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+/*hiding the menu or humbuttom in larger view*/
+    .menu {
+        display: none;
+    }
+
+	nav {
+		justify-content: flex-end;
+		flex-direction: row;
+	}
+	nav a {
+        display: flex;
+		flex: 1 1 100%;
+	}
+
+    .imagesWithCap {
+        display:grid; 
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+        grid-gap: 25px;
+        place-items: center;
+        box-shadow: 0 0 50px #333;
+        padding: 2em;
+    }
+
+    img:hover {box-shadow: 0 0 50px #333;}
+}
