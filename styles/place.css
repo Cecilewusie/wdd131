@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+:root {
+        /* CSS HEX */
+    --viridian: #6b9080ff;
+    --cambridge-blue: #a4c3b2ff;
+    --mint-green: #cce3deff;
+    --azure-web: #eaf4f4ff;
+    --mint-cream: #f6fff8ff;
+    --footer-and-header: #35393cff;;
+
+    --shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    --transparent-container: rgba(255, 255, 255, 0.8);
+
+}
+
+#about, #weather {
+    /* text-align: center; */
+    background-color: var(--mint-cream);
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+    justify-content: center;
+}
+
+#about h2, #weather h2, #weather img {
+    grid-column: span 2;
+}
+
+#about p, #weather p {
+    font-weight: bold;
+    margin: 10px 0;
+    line-height: 1.5;
+    
+}
+
+#about .value-container p, #weather .value-container p {
+    font-weight: lighter;
+}
+
+#about .data-container p, #weather .data-container p {
+    text-align: right;
+}
+
+section {
+    background-color: var(--azure-web);
+    padding: 1em;
+}
+
+footer, h1 {
+    background-color: var(--footer-and-header);
+    color: white;
+    text-align: center;
+    padding: 0.5em;
+}
+
+footer h5 {
+    font-style: italic;
+    font-weight: bold;
+}
+
+#weather .second-display::after {
+    content: url('../images/weather_day_sand_sandstorm_sun_icon.png'); 
+    display: block;
+    margin: 10px 10px 10px 11px;
+    width: 50px;
+    height: auto;
+}
+
+
+#weather .first-display {
+    display: none;
+}
+

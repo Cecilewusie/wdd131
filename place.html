@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Place To Visit</title>
+    <meta name="description" content="WDD 131 A country I would love to visit">
+    <meta name="author" content="Cecil Ewusie">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">    
+    <script src="scripts/place.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>    
+</head>
+<body>
+    <header>
+        <h1>Mauritius</h1>
+    </header>
+    <main>
+        <section id="hero">
+            <!-- Responsive hero image -->
+            <picture>
+                <source srcset="images/hero-large1500.webp" media="(min-width: 1500px)">
+                <source srcset="images/hero-medium1000.webp" media="(min-width: 1000px)">
+                <img src="images/relaxed-small.webp" alt="Hero Image of mauritius" width="540" height="675">
+            </picture>
+        </section>
+    
+        <section id="about">
+            <h2>About Mauritius</h2>
+            <div class="data-container">
+                <p>Area: </p>
+                <p>Population: </p>
+                <p>Capital: </p>
+                <p>Languages: </p>
+                <p>Currency: </p>
+                <p>Time Zone: </p>
+                <p>Calling Code: </p>
+                <p>Internet TLD: </p>
+            </div>
+            <div class="value-container">
+                <p>2,040 km²</p>
+                <p>1.27 million (2024 estimate)</p>
+                <p>Port Louis</p>
+                <p>English (official), French, Mauritian Creole</p>
+                <p>Mauritian Rupee (MUR)</p>
+                <p>Mauritius Standard Time (MUT) UTC+4</p>
+                <p>+230</p>
+                <p>.mu</p>
+                
+            </div>
+        </section>
+    
+        <section id="weather">
+            <h2 class="first-display">Weather ⛅</h2>
+            <h2 class="second-display">Weather</h2>
+            <!-- <img src="images/weather_day_sand_sandstorm_sun_icon.png" alt="weather day icon"> -->
+            <div class="data-container">
+                <p>Temperature: </p>
+                <p>Wind Speed: </p>
+                <p>Wind Chill: </p>
+            </div>
+            <div class="value-container">
+                <p id="temperature">50°F</p>
+                <p id="wind-speed">5 mph</p>
+                <p id="wind-chill">N/A</p>
+
+            </div>
+        </section>
+    
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentyear">year</span> Cecil Ewusie, Accra, Ghana.</p>
+        <p>I have <span id="monthsRemaining">remainingMonths</span> months remaining to my birthday.</p>
+        <h5 id="lastModified">lastModified</h5>        
+    </footer>
+    
+</body>
+</html>

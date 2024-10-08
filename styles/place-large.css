@@ -1,0 +1,52 @@
+@media (min-width: 1000px) {
+
+
+    #weather .second-display, #weather img {
+        display: none;
+    }
+
+    #weather .first-display {
+        display: block;
+    }
+
+    main {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 20px;
+        margin: 0 auto;
+    }
+    
+
+    /* positioning the about section on the left side */
+    #about {
+        flex-basis: 40%;
+        position: absolute;
+        top: 20%;
+        left: 3%;
+        background-color: var(--transparent-container);;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: var(--shadow);
+    }
+
+    #weather {
+        flex-basis: 40%; /* Takes 40% of the space */
+        position: absolute;
+        right: 3%;
+        bottom: 15%;
+        background-color: var(--transparent-container); /* Semi-transparent background */
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: var(--shadow); /* Add a subtle shadow */
+    }
+
+    h2 {
+        background-color: var(--cambridge-blue);
+        border-radius: 8px;
+        padding: 0.2em;
+    }
+    
+    
+}
