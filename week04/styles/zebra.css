@@ -1,0 +1,45 @@
+caption {
+    caption-side: bottom;
+    padding-top: 0.4em;
+    font-size: 0.85rem;
+}
+
+:root {
+    --head: black;
+    --columnColors: rgb(71, 61, 61);
+    --zebra: rgb(130, 128, 126);
+    --margin: 0.5px solid black;
+    --text: white;
+    --border: 1px solid rgb(0,0,0,0.1);
+}
+
+table {
+    border: var(--border);
+    background-color: var(--head);
+}
+
+thead th {
+    color: var(--text);
+}
+
+tbody {
+    background-color: var(--text);
+}
+
+th, td {
+    padding: 0.5em 1rem;
+    text-align: center;
+    white-space: pre;
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--zebra);
+}
+
+.grey-coming {
+    background-color: rgb(130, 128, 10);
+}
+
+.blank {
+    background-color: var(--head);
+}
