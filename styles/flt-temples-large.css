@@ -1,0 +1,37 @@
+/* Larger Views ******************************/
+@media (min-width: 40em) {
+	header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+    .image-card {
+        padding: 20px;
+    }
+
+/*hiding the menu or humbuttom in larger view*/
+    .menu {
+        display: none;
+    }
+
+	nav {
+		justify-content: flex-end;
+		flex-direction: row;
+	}
+	nav a {
+        display: flex;
+		flex: 1 1 100%;
+	}
+
+    .imagesWithCap {
+        display:grid; 
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+        grid-gap: 25px;
+        place-items: center;
+        box-shadow: var(--big-box-shadow);
+        padding: 2em;
+    }
+
+    img:hover {box-shadow: var(--big-box-shadow);}
+}

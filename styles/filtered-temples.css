@@ -1,0 +1,140 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Sansita", sans-serif;
+}
+
+/* mobile **************************/
+:root {
+	--box-shadow: 0 0 30px #333;
+	--big-box-shadow: 0 0 50px #333;
+	--border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+header {
+	background-color: #bbb;
+	display: grid;
+	grid-gap: 1rem;
+	padding: 20px;
+	border: var(--border);
+	box-shadow: var(--box-shadow);
+}
+
+h2 {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+
+header,
+main {
+	margin: 0 auto;
+}
+
+h1 {
+	font-size: 2rem;
+}
+
+nav {
+	background-color: #36454f;
+	display: flex;
+	flex-direction: column;
+}
+
+nav a {
+	display: none;
+	color: #fff;
+	text-align: center;
+	padding: 1rem;
+	text-decoration: none;
+}
+
+nav a:hover {
+	text-decoration: underline double;
+	background-color: #eee;
+	color: #000;
+}
+
+.active {
+	color: yellow;
+}
+ /*.....layout images */
+img {
+    max-width: 100%;
+    display: block;
+	box-shadow: var(--box-shadow);
+	margin-top: 1em;
+	border-radius: 5px;
+}
+
+.imagesWithCap {
+    display:grid; 
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    grid-gap: 25px;
+    place-items: center;
+    box-shadow: var(--big-box-shadow);
+    padding: 2em;
+}
+
+footer {
+    max-width: 100%;
+    margin: 1rem auto;
+    border: 1px solid red;
+    padding: 0.5em;
+    background-color: rgb(22, 26, 26);
+    text-align: center;
+    color: white;
+}
+
+.menu {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: #000;
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+}
+
+.menu::before {
+    content: "☰";
+}
+
+.show.menu::before {
+    content: "X";
+}
+
+.show a {
+    display: block;
+}
+
+.image-card {
+	border: var(--border);
+	padding: 20px;
+	background-color: #eee;
+	text-align: center;
+}
+
+.image-card span {
+	color: darkmagenta;
+	font-size: 15px;
+}
+
+.image-card p {
+	font-size: 1rem;
+	margin-bottom: 8px;
+}
+
+.image-card h3 {
+	font-size: 1.5rem;
+	margin-bottom: 10px;
+}
+
+
