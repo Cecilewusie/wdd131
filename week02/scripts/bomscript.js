@@ -27,7 +27,7 @@ button.addEventListener("click", function () {
 
         //Adding an event listener to the delete button that removes the li element when clicked
         deleteButton.addEventListener("click", function() {
-            list.removeChild("li");
+            list.removeChild(liElement);
             input.focus();
         });
     }
