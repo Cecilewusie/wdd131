@@ -92,7 +92,6 @@ textarea,
 
 textarea {
     height: 100px;
-    resize: vertical;
 }
 
 .wf1 #features {
