@@ -1,0 +1,33 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #E0E0E0;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+h1, h2 {
+    font-family: 'Roboto', sans-serif;
+    color: #4A154B;
+}
+
+section {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    color: #fff;
+    background-color: #131200;
+    padding: 10px 0;
+    bottom: 0;
+    width: 100%;
+}
+
+img {
+    max-width: 50%;
+}

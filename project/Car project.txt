@@ -1,0 +1,25 @@
+Project Subject:
+Car Sales Website
+
+Planned Site Content:
+
+Home Page
+
+A header with a brief introduction about the website's purpose.
+Two images with buttons for users to choose between browsing cars or car parts.
+Car Page
+
+A gallery of cars with brand names as captions. Clicking on a car will display detailed information, including price.
+Car Parts Page
+
+A search bar allowing users to enter the name of the car part they need. If available, the part will be displayed with a price. If not, a message will indicate its availability.
+If I can finish early, this part will be reconstructed to bring up an image of the parts they need and the prices.
+
+Cart page
+This Cart page shows up anytime the user clicks on buy now which button will be located beneath the image along with car information when the user clicks on the image
+
+Reason for Choosing This Subject:
+I aim to help small businesses in my area by offering them a platform to showcase and sell their imported cars and car parts. This project is a starting point for me to provide a service where I list some of their best products for potential buyers, helping both the dealers and customers connect more easily.
+
+
+
