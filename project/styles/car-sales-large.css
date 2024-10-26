@@ -1,0 +1,93 @@
+/* Larger Views ******************************/
+@media (min-width: 40em) {
+	header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+    .image-card {
+        padding: 20px;
+    }
+
+/*hiding the menu or humbuttom in larger view*/
+    .menu {
+        display: none;
+    }
+
+	nav {
+		justify-content: flex-end;
+		flex-direction: row;
+
+	}
+	nav a {
+        display: flex;
+		flex: 1 1 100%;
+        max-width: fit-content;
+	}
+
+    .imagesWithCap {
+        display:grid; 
+        grid-template-columns: repeat(3, 1fr); 
+        grid-gap: 25px;
+        place-items: center;
+        box-shadow: var(--big-box-shadow);
+        padding: 2em;
+    }
+
+    .brand-title {
+        grid-column: span 3;
+        font-size: 2em;
+        color: #4A154B;
+        text-decoration: wavy;
+    }
+
+    img:hover {box-shadow: var(--big-box-shadow);}
+
+    .carsOrTools {
+        display: flex;
+        gap: 5em;
+    }
+
+    .page-option {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5em;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .page-option img {
+        border-radius: 10em;
+        box-shadow: 8px 8px 8px rgba(241, 239, 239, 0.7);
+        margin-bottom: 1em;
+    }
+
+    .page-option button {
+        padding: 0.75em 2.5em;
+        border-radius: 50px;
+        border: none;
+        background-color: #ffe600;
+        color: black;
+        font-size: 1.1em;
+        cursor: pointer;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    section {
+        max-width: 1200px;
+        margin: 2rem auto;
+        padding: 2rem;
+        font-size: 1.2rem;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        color: #111;
+        line-height: 1.8;
+    }
+
+
+
+    .testimonials {
+        max-width: 600px;
+    } 
+            
+}

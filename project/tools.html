@@ -7,8 +7,10 @@
         <meta name="description" content="WDD 131 The website serves as an online platform for small car dealers">
         <meta name="author" content="Cecil Ewusie">
         
+        <!-- styling -->
         <link rel="stylesheet" href="styles/car-sales.css">
         <link rel="stylesheet" href="styles/car-sales-large.css">
+        <link rel="stylesheet" href="styles/form.css">
 
         <!-- functionality of Javascripts -->
         <script src="../scripts/getdates.js" defer></script>
@@ -16,7 +18,6 @@
     </head>
 <body>
     <header>
-        <img src="car-images/logo_optimized.webp" alt="logo" loading="lazy">
         <h1>ImportCarMart</h1>
         <button class="menu" type="button" title="menu dropdown"></button>        
         <nav>   
@@ -25,49 +26,27 @@
             <a href="tools.html">Car Parts</a>
             <a href="cart.html" title="Visit Cart">Cart</a>
             <a href="about.html">About Us</a>    
-        </nav>   
+        </nav>        
     </header>
     <main>
         <!-- catching attention -->
         <section class="hero">
             <div class="hero-content">
                 <h2>Your Gateway to Premium Cars In Ghana</h2>
-                <p>Find the best deals on imported cars and car parts.</p>
+                <p>Find your car part.</p>
                 <button onclick="window.location.href='cars.html'">Explore Now</button>
             </div>
         </section>
-        
+        <section>Oops... We are currently building this page, leave your information so we email you when the site is up and running</section>
+        <form action="about.html">
+            <h2>News Update</h2>
+            <label>Full Name:<input type="text" required></label>
+            <label>Enter Email:<input type="email" name="email" placeholder="example@gmail.com" required></label>
+            <input type="submit" value="Register for Update"> 
+        </form>
+      
 
-        <!-- Site Purpose -->
-        <section>
-            <h2>ImportCartMart Purpose</h2>
-            <p>The website serves as an online platform for small car dealers </p>
-            <p>display and sell imported cars and car parts. It offers a space for </p>
-            <p>dealers to connect with customers looking for specific vehicles or parts.</p>
-        </section>
-        <div class="carsOrTools">
-            <div class="page-option">
-                <img src="car-images/option-cars.webp" alt="cars" loading="lazy">
-                <button onclick="window.location.href='cars.html'">Cars</button>
-            </div>
-            <div class="page-option">
-                <img src="car-images/tool-option.webp" alt="Tools" loading="lazy">
-                <button onclick="window.location.href='tools.html'">Tools</button>
-            </div>
-        </div>        
-
-        <!-- testimonial section -->
-        <section class="testimonials">
-            <h2>What Our Customers Say</h2>
-            <div class="testimonial-card">
-                <p>"I bought my dream car here! Great service and pricing."</p>
-                <span>- Gabrial Kankam</span>
-            </div>
-            <div class="testimonial-card">
-                <p>"Quality car parts with fast shipping. Highly recommend!"</p>
-                <span>- Drew Bryant</span>
-            </div>
-        </section>         
+       
     </main>
     <!-- Footer -->
     <footer>

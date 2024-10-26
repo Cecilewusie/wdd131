@@ -1,0 +1,365 @@
+/* mobile **************************/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    /* background-color: #E0E0E0; */
+    color: #333;
+    margin: 0;
+    padding: 10px;
+    background-image: url('../car-images/pexels-tdcat-70912.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;     
+
+}
+
+/* Overlay */
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 0;
+}
+
+:root {
+	--box-shadow: 0 0 30px #333;
+	--big-box-shadow: 0 0 50px #333;
+	--border: 1px solid rgba(0, 0, 0, 0.1);
+    --header-and-footer-bGcolor: #312001; 
+}
+
+
+/* -----styling the header element --------*/
+header {
+	background-color: #bbb;
+	display: grid;
+	grid-gap: 1rem;
+	padding: 20px;
+	border: var(--border);
+	box-shadow: var(--box-shadow);
+}
+
+h1, h2, .cart-header {
+    font-family: 'Roboto', sans-serif;
+}
+
+header img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+header,
+main {
+	margin: 0 auto;
+}
+
+main, header, footer {
+   position: relative;
+   z-index: 1;
+}
+
+h1 {
+	font-size: 2rem;
+}
+
+nav {
+	background-color: var(--header-and-footer-bGcolor);
+	display: flex;
+	flex-direction: column;
+    border-radius: 10px;
+}
+
+nav a {
+	display: none;
+	color: #fff;
+	text-align: center;
+	padding: 0.8rem 1.2rem;
+	text-decoration: none;
+    border-radius: 10px;
+    margin: 10px;
+    font-size: 1.1rem;
+
+}
+
+nav a:hover, a:focus, a:active {
+	text-decoration: overline;
+    text-decoration-color: black;
+	background-color: #ef5705;
+	color: white;
+    transition: 0.5s;
+    transform: scale(1.15);    
+}
+
+.active {
+	color: yellow;
+}
+
+/* ------styling the menu button------ */
+.menu {
+	font-size: 2rem;
+	border: 0;
+	background: none;
+	color: #000;
+	position: absolute;
+	top: 1em;
+	right: 1rem;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.menu::before {
+    content: "☰";
+}
+
+.show.menu::before {
+    content: "X";
+}
+
+.show a {
+    display: block;
+}
+
+
+ /*-------layout images */
+img {
+    max-width: 100%;
+    display: block;
+	box-shadow: var(--box-shadow);
+	margin-top: 1em;
+	border-radius: 5px;
+}
+
+
+.imagesWithCap {
+    display:grid; 
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); 
+    grid-gap: 25px;
+    place-items: center;
+    box-shadow: var(--big-box-shadow);
+    padding: 2em;
+    background-color: white;
+}
+
+.image-card, .cart-items {
+	border: var(--border);
+	padding: 20px;
+	background-color: #eee;
+	text-align: center;
+}
+
+.image-card p {
+	font-size: 1rem;
+	margin-bottom: 8px;
+}
+
+.image-card h3 {
+	font-size: 1.5rem;
+	margin-bottom: 10px;
+}
+
+/* styling the car information */
+.car-container, .cart-item {
+    border: var(--border);
+    padding: 1.5rem;
+}
+
+.car-year {
+    margin-top: 20px;
+}
+
+.car-information, .cart-item {
+    line-height: 2em;
+    margin-bottom: 5em;
+}
+
+.car-information .price {
+    font-size: larger;
+    font-weight: 700;
+    box-shadow: var(--big-box-shadow);
+    text-align: center;
+    border-radius: 20px;
+    color: #4A154B;
+    margin-bottom: 2rem;
+}
+
+.cart-message {
+    color: black;
+    margin-top: 4em;
+}
+
+
+/* styling images in the page option class in mobile view */
+
+.page-option {
+    text-align: center;
+    padding: 2rem;
+}
+
+.page-option img,
+.hero img {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+
+.page-option img {
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    box-shadow: 8px 8px 8px rgba(241, 239, 239, 0.7);
+}
+
+.page-option button {
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 25px;
+    background-color: #ffe600;
+    border: none;
+    color: black;
+    cursor: pointer;
+}
+
+.page-option button:hover {
+    background-color: #b35700;
+    box-shadow: 0 6px 8px rgba(241, 239, 239, 0.5);
+    color: white;
+    transition: 0.5s;
+    transform: scale(1.15);    
+}
+
+.page-option img:hover, img:active, img:focus {
+    box-shadow: 8px 8px 8px rgba(209, 106, 3, 0.7)
+}
+
+/* styling the sections */
+section {
+    background-color: #fff;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+    text-align: center;
+}
+
+/* styling hero section */
+.hero {
+    background-image: url('../car-images/hero-bg.webp');
+    background-size: cover;
+    background-position: center;
+    padding: 4rem;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #ffe600;
+    margin-bottom: 2rem;
+}
+
+.hero button,.add-to-cart {
+    padding: 0.8rem 2.5rem;
+    font-size: 1.2rem;
+    background-color: #ffe600;
+    color: black;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-bottom: 7px;
+}
+
+.hero button:hover, .add-to-cart:hover {
+    background-color: #b35700;
+    color: white;
+    transition: 0.5s;
+    transform: scale(1.1);   
+}
+
+
+/* ----styling the testimonial section---- */
+.testimonials {
+    margin-top: 5em;
+    background-color: #f9f9f9;
+    padding: 2rem;
+    text-align: center;
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
+
+.testimonials h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.testimonial-card {
+    background-color: white;
+    padding: 1.5rem;
+    margin: 1rem auto;
+    max-width: 600px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    scroll-snap-align: center;
+    flex: 0 0 90%;
+    margin: 0 10px;
+}
+
+.testimonial-card p {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.testimonial-card span {
+    display: block;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+
+
+/* styling the footer */
+footer {
+    text-align: center;
+    color: #fff;
+    background-color: var(--header-and-footer-bGcolor);
+    padding: 1.5em;
+    font-size: 0.9rem;
+    bottom: 0;
+    width: 100%;
+    line-height: 1.5;
+}
