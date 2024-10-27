@@ -23,6 +23,16 @@ const carBrands = [
             },
             {
                 modelTitle: "Toyota",
+                modelName: "RAV4",
+                year: 2019,
+                engine: "2.5L 4-cylinder",
+                fuelType: "Hybrid",
+                price: "$28,000 - $35,000",
+                features: ["Sunroof", "Leather Seats", "AWD"],
+                imageUrl: "car-images/toyota/toyota-rav4-2019.webp"
+            },
+            {
+                modelTitle: "Toyota",
                 modelName: "Camry",
                 year: 2021,
                 engine: "2.5L 4-cylinder",
@@ -31,6 +41,26 @@ const carBrands = [
                 features: ["Navigation", "Heated Seats", "Lane-Keeping Assist"],
                 imageUrl: "car-images/toyota/toyota-camry-2021.webp"
             },
+            {
+                modelTitle: "Toyota",
+                modelName: "Hilux",
+                year: 2022,
+                engine: "2.8L Diesel",
+                fuelType: "Diesel",
+                price: "$35,000 - $40,000",
+                features: ["Off-road Capability", "4WD", "Touchscreen Display"],
+                imageUrl: "car-images/toyota/toyota-hilux-2022.webp"
+            },
+            {
+                modelTitle: "Toyota",
+                modelName: "Supra",
+                year: 2023,
+                engine: "3L Turbocharged",
+                fuelType: "Petrol",
+                price: "$50,000 - $60,000",
+                features: ["Sports Mode", "Launch Control", "Turbocharged Engine"],
+                imageUrl: "car-images/toyota/toyota-supra-2020.webp"
+            },            
             // Additional Toyota models...
         ]
     },
@@ -57,6 +87,36 @@ const carBrands = [
                 features: ["Blind Spot Monitoring", "Dual-Zone Climate Control", "Apple CarPlay"],
                 imageUrl: "car-images/honda/honda-accord-2021.webp"
             },
+            {
+                modelTitle: "Honda",
+                modelName: "CR-V",
+                year: 2019,
+                engine: "1.5L Turbocharged",
+                fuelType: "Hybrid",
+                price: "$28,000 - $35,000",
+                features: ["Panoramic Sunroof", "Wireless Charging", "AWD"],
+                imageUrl: "car-images/honda/honda-cr-v-2019.webp"
+            },
+            {
+                modelTitle: "Honda",
+                modelName: "Pilot",
+                year: 2022,
+                engine: "3.5L V6",
+                fuelType: "Petrol",
+                price: "$35,000 - $40,000",
+                features: ["Adaptive Cruise Control", "Third-Row Seating", "Rear Entertainment"],
+                imageUrl: "car-images/honda/honda-pilot-2022.webp"
+            },
+            {
+                modelTitle: "Honda",
+                modelName: "Odyssey",
+                year: 2023,
+                engine: "3.5L V6",
+                fuelType: "Petrol",
+                price: "$40,000 - $45,000",
+                features: ["Rear-Seat Entertainment", "Sliding Doors", "Leather Upholstery"],
+                imageUrl: "car-images/honda/honda-odyssey-2023.webp"
+            },                                    
             // Additional Honda models...
         ]
     },
@@ -83,6 +143,36 @@ const carBrands = [
                 features: ["Adaptive Suspension", "Leather Interior", "AWD"],
                 imageUrl: "car-images/bmw/BMW-X5-2021.webp"
             },
+            {
+                modelTitle: "BMW",
+                modelName: "i8",
+                year: 2019,
+                engine: "Hybrid",
+                fuelType: "Hybrid",
+                price: "$100,000 - $120,000",
+                features: ["Butterfly Doors", "Hybrid Powertrain", "Heads-Up Dispaly"],
+                imageUrl: "car-images/bmw/BMW-i8-2021.webp"
+            },
+            {
+                modelTitle: "BMW",
+                modelName: "Z4",
+                year: 2022,
+                engine: "3.0L Turbocharged",
+                fuelType: "Petrol",
+                price: "$50,000 - $65,000",
+                features: ["Convertible", "Adaptive M Suspension", "Premium Audio System"],
+                imageUrl: "car-images/bmw/BMW-Z4-2022.webp"
+            },
+            {
+                modelTitle: "BMW",
+                modelName: "X7",
+                year: 2023,
+                engine: "4.4L V8",
+                fuelType: "Petrol",
+                price: "$75,000 - $85,000",
+                features: ["Executive Seating Package", "Full Leather Trim", "Night Vision"],
+                imageUrl: "car-images/bmw/BMW-X7-2023.webp"
+            },                                    
             // Additional BMW models...
         ]
     },
@@ -109,6 +199,36 @@ const carBrands = [
                 features: ["Panoramic Roof", "MBUX", "4MATIC AWD"],
                 imageUrl: "car-images/benz/Mercedes-Benz-gle-2020.webp"
             },
+            {
+                modelTitle: "Mercedes-Benz",
+                modelName: "S-Class",
+                year: 2019,
+                engine: "4.0L V8",
+                fuelType: "Petrol",
+                price: "$90,000 - $120,000",
+                features: ["Massage Seats", "4D Burmester Sound", "Adaptive Air Suspension"],
+                imageUrl: "car-images/benz/mercedez-benz-S-class-2019.webp"
+            },
+            {
+                modelTitle: "Mercedes-Benz",
+                modelName: "G-Class",
+                year: 2022,
+                engine: "4.0L V8 Biturbo",
+                fuelType: "Petrol",
+                price: "$120,000 - $150,000",
+                features: ["All-Terrain Capability", "AMG Package", "Luxury Interior"],
+                imageUrl: "car-images/benz/mercedez-benz-G-class-2022.webp"
+            },
+            {
+                modelTitle: "Mercedes-Benz",
+                modelName: "EQS",
+                year: 2023,
+                engine: "Electric",
+                fuelType: "Electric",
+                price: "$100,000 - $110,000",
+                features: ["Hyperscreen", "Full Electric Drive", "Premium Seating"],
+                imageUrl: "car-images/benz/mercedes-benz-eqs-2023.webp"
+            },                                    
             // Additional Mercedes-Benz models...
         ]
     },
