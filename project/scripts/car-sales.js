@@ -273,12 +273,13 @@ function carBrandTemplate(model) {
             <div class="car-information">
                 <p><strong>Engine:</strong> ${model.engine}</p>
                 <p><strong>Fuel Type:</strong> ${model.fuelType}</p>
-                <ul><strong>Features:</strong>
+                <strong>Features:</strong>
+                <ul>
                     ${model.features.map(feature => `<li>${feature}</li>`).join("")}
                 </ul>
                 <p class="price">${model.price}</p>
                 <p class="cart-message"></p>
-                <button class="add-to-cart">Add to Cart 🛒</button>                
+                <button type="button" class="add-to-cart">Add to Cart 🛒</button>                
             </div>
         </div>
     `;
@@ -320,7 +321,7 @@ function createCarHtml(filteredBrands, brandName = "") {
 
 // Function to handle filter by brand name
 function filterByBrand(brandName) {
-    const filteredBrands = carBrands.filter(brand => brand.brand === brandName);
+    const filteredBrands = carBrands.filter(brand => brand.brand === brandName); //comparing the brand name to filter the given brand name out
     createCarHtml(filteredBrands, brandName);
 }
 
