@@ -25,8 +25,8 @@ function displayCartItems() {
             <p><strong>Year:</strong> ${item.year}</p>
             <p><strong>Engine:</strong> ${item.engine}</p>
             <p><strong>Price:</strong> ${item.price}</p>
-            <button class="remove-item" data-index="${index}" title="click to remove item">❌</button>
-            <button class="buy-now">Buy Now</button>
+            <button type="button" class="remove-item" data-index="${index}" title="click to remove item">❌</button>
+            <button type="button" class="buy-now">Buy Now</button>
         </div>
     `).join("");
 
